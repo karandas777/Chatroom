@@ -25,6 +25,9 @@ export default class ChatList extends Component {
         if (username === "" || username === null || username === undefined){
             this.props.history.push('/');
         }
+        else{
+            return false;
+        }
     }
 
     getMessagelist = () => {
@@ -55,17 +58,17 @@ export default class ChatList extends Component {
 
     render() {
         return (
-            <div className="container-fluid px-0">
+            <div className="container-fluid">
                 <Header history={this.props.history} />
                 <div className="col-md-6 mx-auto pb-5 mb-4" id="chatlist">
                     {
                         this.state.messageList && this.state.messageList.map((chat)=>(
                             <div className="my-3" key={chat.id}>
-                                <div className="bg-light p-3 rounded">
-                                    <div className="h6 mb-1">{chat.username}</div>
-                                    <div className="h3 mb-0">{chat.message}</div>
+                                <div className="bg-grad text-light p-3 shadowx rounded">
+                                    <div className="small">{chat.username}</div>
+                                    <div className="h4 mb-0">{chat.message}</div>
                                 </div>
-                                <div className="small text-right px-2 text-secondary">{chat.date}</div>
+                                <div className="small text-right text-secondary px-2 mt-1">{chat.date}</div>
                             </div>
                         ))
                     }
