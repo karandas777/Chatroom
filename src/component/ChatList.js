@@ -66,9 +66,9 @@ export default class ChatList extends Component {
                             <div className="row my-3 mx-0" key={chat.id}>
                                 <div className="col-1 p-0">
                                     <img src={`https://avatars.dicebear.com/api/avataaars/${chat.username}.svg?`} 
-                                    className="userimg w-100 h-auto bg-light shadowx rounded-pill mt-1" alt="user-img"></img>
+                                    className="userimg w-100 h-auto bg-dark rounded-pill mt-1" alt="user-img"></img>
                                 </div>
-                                <div className="col-11">
+                                <div className="col-11 pr-0">
                                     <div className="bg-grad text-light p-3 shadowx rounded">
                                         <div className="small mb-2">{chat.username}</div>
                                         <div className="h4 mb-0">{chat.message}</div>
