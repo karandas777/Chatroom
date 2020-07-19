@@ -7,10 +7,8 @@ import Landing from './component/Landing';
 function App() {
   return (
     <Router>
-      <div className="mt-4 pt-5">
         <Route exact path="/" component={Landing} />
         <Route exact path="/chat" component={ChatList} />
-      </div>
     </Router>
   );
 }

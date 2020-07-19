@@ -58,17 +58,23 @@ export default class ChatList extends Component {
 
     render() {
         return (
-            <div className="container-fluid">
+            <div className="container-fluid px-1">
                 <Header history={this.props.history} />
-                <div className="col-md-6 mx-auto pb-5 mb-4" id="chatlist">
+                <div className="col-md-6 mx-auto py-5 my-4" id="chatlist">
                     {
                         this.state.messageList && this.state.messageList.map((chat)=>(
-                            <div className="my-3" key={chat.id}>
-                                <div className="bg-grad text-light p-3 shadowx rounded">
-                                    <div className="small">{chat.username}</div>
-                                    <div className="h4 mb-0">{chat.message}</div>
+                            <div className="row my-3 mx-0" key={chat.id}>
+                                <div className="col-1 p-0">
+                                    <img src={`https://avatars.dicebear.com/api/avataaars/${chat.username}.svg?`} 
+                                    className="userimg w-100 h-auto bg-light shadowx rounded-pill mt-1" alt="user-img"></img>
                                 </div>
-                                <div className="small text-right text-secondary px-2 mt-1">{chat.date}</div>
+                                <div className="col-11">
+                                    <div className="bg-grad text-light p-3 shadowx rounded">
+                                        <div className="small mb-2">{chat.username}</div>
+                                        <div className="h4 mb-0">{chat.message}</div>
+                                    </div>
+                                </div>
+                                <div className="col-12 small text-right text-secondary px-2 mt-2">{chat.date}</div>
                             </div>
                         ))
                     }

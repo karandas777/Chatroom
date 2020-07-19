@@ -49,14 +49,15 @@ export default class Landing extends Component {
 
     render() {
         return (
-            <div className="container-fluid px-0"> 
-                <div className="container">
-                <div className="jumbotron jumbotron-fluid bg-grad shadowx rounded text-light">
+            <div className="container-fluid vh-100 bg-grad px-0"> 
+                <div className="container col-md-6 vh-100 holder">
+                <div className="text-light pb-5 content">
                     <div className="container text-center">
-                        <h1 className="display-4 mb-3">Global Chatroom</h1>
-                        <p className="lead">Start a conversation with peoples all over the world.</p>
+                        <img src={require('../assets/logo.png')} width="60" height="60" alt="logo" />
+                        <h1 className="display-4 mb-3">Chatroom</h1>
+                        <p className="small">Start a conversation with peoples all over the world.</p>
                         <input type="text" name="username" placeholder={this.state.placeHolder} onChange={this.handleChange}
-                            className="my-4 form-control mx-auto col-md-3">
+                            className="my-4 form-control mx-auto col-md-6">
                         </input>
                         <button className="btn btn-light" onClick={this.handleSubmit}>Get Started</button>
                     </div>

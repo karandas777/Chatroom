@@ -10,7 +10,7 @@ export default class Header extends Component {
 
     render() {
         return (
-            <div className="container-fluid fixed-top w-100 bg-light px-0">
+            <div className="container-fluid fixed-top w-100 bg-grad-light shadowx px-0">
                 <div className="container">
                 <nav className="navbar navbar-light px-0">
                     <span className="navbar-brand">
