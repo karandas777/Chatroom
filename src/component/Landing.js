@@ -57,9 +57,9 @@ export default class Landing extends Component {
                         <h1 className="display-4 mb-3 hand-written">Chat<span className="font-weight-bold">Buddy</span></h1>
                         <p className="small">Start a conversation with peoples all over the world.</p>
                         <input type="text" name="username" placeholder={this.state.placeHolder} onChange={this.handleChange}
-                            className="my-4 form-control mx-auto col-md-6">
+                            className="my-4 form-control rounded-pill mx-auto col-md-6">
                         </input>
-                        <button className="btn btn-outline-light" onClick={this.handleSubmit}>Get Started</button>
+                        <button className="btn btn-outline-light rounded-pill" onClick={this.handleSubmit}>Get Started</button>
                     </div>
                 </div>
                 </div>

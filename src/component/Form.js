@@ -53,10 +53,10 @@ export default class Form extends Component {
                         <div className="col-9 pr-0">
                             <textarea placeholder={this.state.placeHolder} name="message" 
                             value={this.state.message} type="text" rows="1" onChange={this.handleChange} 
-                            className="form-control inp w-100"></textarea>
+                            className="form-control inp rounded-pill w-100"></textarea>
                         </div>
                         <div className="col-3">
-                            <button className="btn bg-grad-success border-0 text-light w-100 h-100" onClick={this.funvalidate}>
+                            <button className="btn bg-grad-success border-0 rounded-pill text-light w-100 h-100" onClick={this.funvalidate}>
                                 <i className="fa fa-send"></i>
                             </button>
                         </div>

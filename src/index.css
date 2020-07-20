@@ -18,7 +18,7 @@ body {
 }
 
 .bg-grad{
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(163,175,243,1) 0%, rgba(220,182,232,1) 100.2% );
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(165, 177, 243) 0%, rgba(220,182,232,1) 100.2% );
 }
 
 .bg-grad-light{
@@ -35,6 +35,16 @@ body {
 
 .shadowx{
   box-shadow: 0px 0px 10px #1e1e1e63;
+}
+
+.rounded-l{
+  border-radius: 5px 20px 20px 20px;
+  border: 3px solid rgb(165, 177, 243);
+}
+
+.rounded-r{
+  border-radius: 20px 5px 20px 20px;
+  border: 3px solid rgb(165, 177, 243);
 }
 
 .inp{
@@ -57,7 +67,6 @@ body {
 body::-webkit-scrollbar{
   display: none;
 }
-
 
 @media screen and (max-width:600px){
   .userimg{

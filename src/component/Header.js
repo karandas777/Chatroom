@@ -23,7 +23,7 @@ export default class Header extends Component {
                                 <button className="btn bg-grad-light text-dark border-0 mr-1" disabled>
                                 <i className="fa fa-user-circle"></i> {localStorage.getItem('username').slice(0,10)}
                                 </button>
-                                <button className="btn bg-grad-danger text-light border-0" onClick={this.funLogout}>
+                                <button className="btn bg-grad-danger text-light rounded-pill border-0" onClick={this.funLogout}>
                                     <i className="fa fa-power-off"></i>
                                 </button>
                             </span>
