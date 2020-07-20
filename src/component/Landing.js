@@ -54,12 +54,12 @@ export default class Landing extends Component {
                 <div className="text-light pb-5 content">
                     <div className="container text-center">
                         <img src={require('../assets/logo.png')} width="60" height="60" alt="logo" />
-                        <h1 className="display-4 mb-3">Chatroom</h1>
+                        <h1 className="display-4 mb-3 hand-written">Chatroom</h1>
                         <p className="small">Start a conversation with peoples all over the world.</p>
                         <input type="text" name="username" placeholder={this.state.placeHolder} onChange={this.handleChange}
                             className="my-4 form-control mx-auto col-md-6">
                         </input>
-                        <button className="btn btn-light" onClick={this.handleSubmit}>Get Started</button>
+                        <button className="btn btn-outline-light" onClick={this.handleSubmit}>Get Started</button>
                     </div>
                 </div>
                 </div>

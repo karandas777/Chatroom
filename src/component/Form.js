@@ -48,7 +48,7 @@ export default class Form extends Component {
     render() {
         return (
             <div className="container-fluid bg-grad-light fixed-bottom shadowx px-0 w-100">
-                <div className="container py-3">
+                <div className="container py-2">
                     <div className="row">
                         <div className="col-9 pr-0">
                             <textarea placeholder={this.state.placeHolder} name="message" 
@@ -56,7 +56,7 @@ export default class Form extends Component {
                             className="form-control inp w-100"></textarea>
                         </div>
                         <div className="col-3">
-                            <button className="btn btn-success w-100 h-100" onClick={this.funvalidate}>
+                            <button className="btn bg-grad-success border-0 text-light w-100 h-100" onClick={this.funvalidate}>
                                 <i className="fa fa-send"></i>
                             </button>
                         </div>

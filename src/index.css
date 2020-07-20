@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html{
   scroll-behavior: smooth;
@@ -8,6 +9,11 @@ html{
 body {
   margin: 0;
   user-select: none;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.hand-written{
   font-family: 'Itim', cursive;
 }
 
@@ -19,8 +25,16 @@ body {
   background-color: #eaeae8;
 }
 
+.bg-grad-danger{
+  background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+}
+
+.bg-grad-success{
+  background: linear-gradient(to right, #38ef7d, #11998e);
+}
+
 .shadowx{
-  box-shadow: -2px 2px 10px #1e1e1e63;
+  box-shadow: 0px 0px 10px #1e1e1e63;
 }
 
 .inp{
