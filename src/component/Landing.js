@@ -8,6 +8,7 @@ export default class Landing extends Component {
     
         this.state = {
              username:"",
+             category:"/chat",
              placeHolder:"Enter your name",
         }
     }
@@ -27,7 +28,7 @@ export default class Landing extends Component {
         else{
             this.setUsername()
             .then(()=>{
-                this.props.history.push('/chat');
+                this.props.history.push(this.state.category);
             })
 
         }
@@ -35,6 +36,7 @@ export default class Landing extends Component {
 
     setUsername = async () => {
         localStorage.setItem('username',this.state.username);
+        localStorage.setItem("category",this.state.category);
     }
     
     funVerifyUser=()=>{
@@ -43,7 +45,7 @@ export default class Landing extends Component {
             return false;
         }
         else{
-            this.props.history.push('/chat');
+            this.props.history.push(this.state.category);
         }
     }
 
@@ -53,13 +55,21 @@ export default class Landing extends Component {
                 <div className="container col-md-6 vh-100 holder">
                 <div className="text-light pb-5 content">
                     <div className="container text-center">
-                        <img src={require('../assets/logo.png')} width="60" height="60" alt="logo" />
-                        <h1 className="display-4 mb-3 hand-written">Chat<span className="font-weight-bold">Buddy</span></h1>
-                        <p className="small">Start a conversation with peoples all over the world.</p>
-                        <input type="text" name="username" placeholder={this.state.placeHolder} onChange={this.handleChange}
-                            className="my-4 form-control rounded-pill mx-auto col-md-6">
+                        
+                        <h1 className="display-4 mt-3 hand-written">Chat<span className="font-weight-bold">Buddy</span></h1>
+                        <p className="small mb-5">Start a conversation with peoples all over the world.</p>
+                        <input type="text" name="username" value={this.state.username} placeholder={this.state.placeHolder} onChange={this.handleChange}
+                            className="my-3 form-control rounded-pill mx-auto col-md-6">
                         </input>
-                        <button className="btn btn-outline-light rounded-pill" onClick={this.handleSubmit}>Get Started</button>
+                        <div className="small mt-2">Select a Room</div>
+                        <select name="category" value={this.state.category} className="mt-2 mb-4 form-control rounded-pill mx-auto col-md-6" onChange={this.handleChange}>
+                                <option value="/chat">General</option>
+                                <option value="/technology">Technology</option>
+                                <option value="/food">Food</option>
+                                <option value="/traveling">Traveling</option>
+                                <option value="/politics">Politics</option>
+                        </select>
+                        <button className="btn bg-grad-danger btn-lg hand-written text-light border-0 rounded-pill mt-3" onClick={this.handleSubmit}>Start Chatting</button>
                     </div>
                 </div>
                 </div>

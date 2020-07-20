@@ -17,18 +17,19 @@ export default class Header extends Component {
                         <img src={require('../assets/logo.png')} width="30" height="30" className="d-inline-block align-top mr-1" alt="" />
                         Chat<span className="font-weight-bold">Buddy</span>
                     </span>
-                    {
-                        localStorage.getItem('username') ? (
                             <span className="float-right d-inline-block">
                                 <button className="btn bg-grad-light text-dark border-0 mr-1" disabled>
-                                <i className="fa fa-user-circle"></i> {localStorage.getItem('username').slice(0,10)}
+                                <i className="fa fa-user-circle"></i> {localStorage.getItem('username') && localStorage.getItem('username').slice(0,10)}
                                 </button>
-                                <button className="btn bg-grad-danger text-light rounded-pill border-0" onClick={this.funLogout}>
+                                {
+                                    localStorage.getItem('username') ? (
+                                        <button className="btn bg-grad-danger text-light rounded-pill border-0" onClick={this.funLogout}>
                                     <i className="fa fa-power-off"></i>
                                 </button>
+                                    ) : null
+                                }
+                                
                             </span>
-                        ) : null
-                    }
                 </nav>
                 </div>
             </div>

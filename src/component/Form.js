@@ -25,7 +25,7 @@ export default class Form extends Component {
             message : this.state.message,
             date: datex.toDateString() ,
         }
-        firedb.child('messages').push(data,err=>{
+        firedb.child(this.props.category).push(data,err=>{
             if(err){
                 console.log(err)
             }

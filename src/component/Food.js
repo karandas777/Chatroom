@@ -4,14 +4,14 @@ import firedb from '../firebase';
 import { animateScroll } from "react-scroll";
 import ChatCard from './ChatCard';
 
-export default class ChatList extends Component {
+export default class Food extends Component {
 
     constructor(props) {
         super(props)
     
         this.state = {
              messageList:[],
-             category:"General",
+             category:"Food",
         }
     }
 

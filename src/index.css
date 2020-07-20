@@ -64,6 +64,10 @@ body {
   width: 50%;
 }
 
+.chat-holder{
+  min-height: 100vh;
+}
+
 body::-webkit-scrollbar{
   display: none;
 }
