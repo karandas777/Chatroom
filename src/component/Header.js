@@ -15,7 +15,7 @@ export default class Header extends Component {
                 <nav className="navbar navbar-light px-0 py-1">
                     <span className="navbar-brand hand-written">
                         <img src={require('../assets/logo.png')} width="30" height="30" className="d-inline-block align-top mr-1" alt="" />
-                        Chatroom
+                        Chat<span className="font-weight-bold">Buddy</span>
                     </span>
                     {
                         localStorage.getItem('username') ? (
