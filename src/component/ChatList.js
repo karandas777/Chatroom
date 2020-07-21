@@ -11,7 +11,6 @@ export default class ChatList extends Component {
     
         this.state = {
              messageList:[],
-             category:"General",
         }
     }
 
@@ -32,7 +31,7 @@ export default class ChatList extends Component {
     }
 
     getMessagelist = () => {
-        firedb.child(this.state.category).on('value', snapshot=>{
+        firedb.child('messages').on('value', snapshot=>{
             let list = [];
 
             for(let chat in snapshot.val()){
@@ -59,7 +58,7 @@ export default class ChatList extends Component {
 
     render() {
         return (
-            <div className="container-fluid px-1 bg-dark chat-holder">
+            <div className="container-fluid px-1 chat-holder">
                 <div className="col-md-6 mx-auto py-5 my-4" id="chatlist">
                     {
                         this.state.messageList && this.state.messageList.map((chat)=>(
@@ -67,7 +66,7 @@ export default class ChatList extends Component {
                         ))
                     }
                 </div>
-                <Form category={this.state.category}/>
+                <Form/>
             </div>
         )
     }

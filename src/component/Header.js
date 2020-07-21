@@ -10,7 +10,7 @@ export default class Header extends Component {
 
     render() {
         return (
-            <div className="container-fluid fixed-top w-100 bg-grad-light shadowx px-0">
+            <div className="container-fluid fixed-top w-100 bg-grad-light shadow-sm px-0">
                 <div className="container">
                 <nav className="navbar navbar-light px-0 py-1">
                     <span className="navbar-brand hand-written">
@@ -21,11 +21,12 @@ export default class Header extends Component {
                                 <button className="btn bg-grad-light text-dark border-0 mr-1" disabled>
                                 <i className="fa fa-user-circle"></i> {localStorage.getItem('username') && localStorage.getItem('username').slice(0,10)}
                                 </button>
+                                
                                 {
                                     localStorage.getItem('username') ? (
-                                        <button className="btn bg-grad-danger text-light rounded-pill border-0" onClick={this.funLogout}>
-                                    <i className="fa fa-power-off"></i>
-                                </button>
+                                        <button className="btn bg-grad-danger text-light border-0" onClick={this.funLogout}>
+                                            <i className="fa fa-power-off"></i>
+                                        </button>
                                     ) : null
                                 }
                                 
