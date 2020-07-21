@@ -1,6 +1,9 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face{
+  font-family: Heavy;
+  src: url('./assets/heavy.otf');
+}
 
 html{
   scroll-behavior: smooth;
@@ -13,8 +16,8 @@ body {
   
 }
 
-.hand-written{
-  font-family: 'Itim', cursive;
+.brandname{
+  font-family: Heavy;
 }
 
 .bg-grad{
@@ -46,20 +49,10 @@ body {
   vertical-align: middle;
 }
 
-.userimg{
-  width: 50%;
-}
-
 .chat-holder{
   min-height: 100vh;
 }
 
 body::-webkit-scrollbar{
   display: none;
-}
-
-@media screen and (max-width:600px){
-  .userimg{
-    width: 80%;
-  } 
 }

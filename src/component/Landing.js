@@ -50,17 +50,17 @@ export default class Landing extends Component {
 
     render() {
         return (
-            <div className="container-fluid vh-100 bg-grad px-0"> 
+            <div className="container-fluid vh-100 bg-light px-0"> 
                 <div className="container col-md-6 vh-100 holder">
-                <div className="text-light pb-5 content">
+                <div className="text-dark pb-5 content">
                     <div className="container text-center">
                         
-                        <h1 className="display-4 mt-3 hand-written">Chat<span className="font-weight-bold">Buddy</span></h1>
-                        <p className="small mb-3">Connent with peoples all over the world !</p>
+                        <h1 className="display-4 mt-3 brandname">Chat<span className="text-primary">Buddy</span></h1>
+                        <p className="small brandname mb-3">Connent with peoples all over the world !</p>
                         <input type="text" name="username" value={this.state.username} placeholder={this.state.placeHolder} onChange={this.handleChange}
                             className="my-3 form-control mx-auto col-md-6">
                         </input>
-                        <button className="btn btn-outline-light btn-lg hand-written mt-3" onClick={this.handleSubmit}>Start Chatting</button>
+                        <button className="btn btn-outline-primary brandname btn-lg hand-written mt-3" onClick={this.handleSubmit}>Start Chatting</button>
                     </div>
                 </div>
                 </div>

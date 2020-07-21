@@ -58,7 +58,7 @@ export default class ChatList extends Component {
 
     render() {
         return (
-            <div className="container-fluid px-1 chat-holder">
+            <div className="container-fluid px-1 bg-grad-light chat-holder">
                 <div className="col-md-6 mx-auto py-5 my-4" id="chatlist">
                     {
                         this.state.messageList && this.state.messageList.map((chat)=>(
