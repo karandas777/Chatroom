@@ -23,10 +23,10 @@ export default class ChatCard extends Component {
                 <div className="row my-4 mx-0" >
                     <div className="col-11 pl-0 text-right">
                         <div className="bg-light shadow text-dark text-left p-2 rounded-lg d-inline-block" onClick={this.funToggleDate}>
-                            <div className="h5 p-2 my-0">{chat.message}</div>
+                            <div className="h6 my-0">{chat.message}</div>
                         </div>
                         {
-                            this.state.date ? (<div className="small text-right px-2 mt-2">Sent by {chat.username} on {chat.date}</div>) : null
+                            this.state.date ? (<div className="small text-primary text-right px-2 mt-2">Sent by {chat.username} on {chat.date}</div>) : null
                         }
                     </div>
                     <div className="col-1 p-0">
@@ -45,10 +45,10 @@ export default class ChatCard extends Component {
                     </div>
                     <div className="col-11 pr-0">
                         <div className="bg-light shadow text-dark p-2 rounded-lg d-inline-block" onClick={this.funToggleDate}>
-                            <div className="h5 p-2 my-0">{chat.message}</div>
+                            <div className="h6 my-0">{chat.message}</div>
                         </div>
                         {
-                            this.state.date ? (<div className="small px-2 mt-2">Sent by {chat.username} on {chat.date}</div>) : null
+                            this.state.date ? (<div className="small text-primary px-2 mt-2">Sent by {chat.username} on {chat.date}</div>) : null
                         }
                     </div>
                 </div>

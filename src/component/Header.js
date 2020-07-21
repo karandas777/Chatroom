@@ -13,11 +13,11 @@ export default class Header extends Component {
             <div className="container-fluid fixed-top w-100 bg-grad-light shadow-sm px-0">
                 <div className="container">
                 <nav className="navbar navbar-light px-0 py-1">
-                    <span className="navbar-brand brandname mt-1">
-                        Chat<span className="text-primary">Buddy</span>
+                    <span className="navbar-brand brandname mt-1 text-primary">
+                        <i class="fa fa-commenting"></i> <span className="text-dark"> Chat</span>Buddy
                     </span>
                             <span className="float-right d-inline-block">
-                                <button className="btn bg-grad-light text-dark border-0 mr-1 brandname" disabled>
+                                <button className="btn bg-grad-light btn-sm text-dark border-0 mr-1 brandname" disabled>
                                 <i className="fa fa-user-circle"></i> {localStorage.getItem('username') && localStorage.getItem('username').slice(0,10)}
                                 </button>
                                 

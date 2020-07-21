@@ -55,7 +55,8 @@ export default class Landing extends Component {
                 <div className="text-dark pb-5 content">
                     <div className="container text-center">
                         
-                        <h1 className="h1 mt-3 brandname">Chat<span className="text-primary">Buddy</span></h1>
+                        <h1 className="h1 mt-3 brandname text-primary">
+                            <i class="fa fa-commenting"></i> <span className="text-dark"> Chat</span>Buddy</h1>
                         <p className="small brandname mb-3">Connent with peoples all over the world !</p>
                         <input type="text" name="username" value={this.state.username} placeholder={this.state.placeHolder} onChange={this.handleChange}
                             className="my-3 form-control mx-auto col-md-6">
