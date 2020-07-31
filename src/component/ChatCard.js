@@ -22,7 +22,7 @@ export default class ChatCard extends Component {
             return (
                 <div className="row my-4 mx-0" >
                     <div className="col-11 pl-0 text-right">
-                        <div className="bg-light shadow text-dark text-left p-2 rounded-lg d-inline-block" onClick={this.funToggleDate}>
+                        <div className="bg-light shadow-sm text-dark text-left p-2 rounded-lg d-inline-block" onClick={this.funToggleDate}>
                             <div className="h6 my-0">{chat.message}</div>
                         </div>
                         {
@@ -44,7 +44,7 @@ export default class ChatCard extends Component {
                             className="w-100 h-auto bg-dark rounded-pill p-1" alt="user-img"></img>
                     </div>
                     <div className="col-11 pr-0">
-                        <div className="bg-light shadow text-dark p-2 rounded-lg d-inline-block" onClick={this.funToggleDate}>
+                        <div className="bg-light shadow-sm text-dark p-2 rounded-lg d-inline-block" onClick={this.funToggleDate}>
                             <div className="h6 my-0">{chat.message}</div>
                         </div>
                         {

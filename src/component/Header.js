@@ -14,7 +14,7 @@ export default class Header extends Component {
                 <div className="container">
                 <nav className="navbar navbar-light px-0 py-1">
                     <span className="navbar-brand brandname mt-1 text-primary">
-                        <i class="fa fa-commenting"></i> <span className="text-dark"> Chat</span>Buddy
+                        <i className="fa fa-commenting"></i> <span className="text-dark"> Chat</span>Buddy
                     </span>
                             <span className="float-right d-inline-block">
                                 <button className="btn bg-grad-light btn-sm text-dark border-0 mr-1 brandname" disabled>
